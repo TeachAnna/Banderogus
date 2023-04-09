@@ -20,7 +20,7 @@ body {
 
 .main_page {
     background: linear-gradient(to left, #afdeff, #fcfefe);
-    height: 700px;
+
 }
 
 .main_page_title {
@@ -183,4 +183,123 @@ body {
     width: 100%;
     z-index: 2;
     pointer-events: none;
+}
+
+.gus_main_page {
+    width: 50%;
+}
+
+@media screen and (max-width: 1178px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .main_page_title {
+        font-size: 44px;
+    }
+
+    .main_page_text_container {
+        padding: 20px;
+    }
+
+    .main_page_description {
+        margin-bottom: 0;
+    }
+
+    .gus_fact_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gus_main_page {
+        align-self: flex-end;
+    }
+
+    .main_page_text_container {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .gus_fact_description {
+        width: auto;
+    }
+
+    .main_page_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gus_main_page {
+        align-self: center;
+    }
+
+    .main_page_left_side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .main_page_text_container {
+        text-align: center;
+    }
+
+    .gus_facts_title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .gus_facts_text {
+        margin: 10px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .form_container {
+        width: auto;
+        padding: 20px;
+    }
+
+    .form_field_input {
+        width: 350px;
+    }
+
+    .form_field {
+        align-items: center;
+    }
+
+    .gus_main_page {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .form_container {
+        padding: 10px;
+    }
+
+    .form_field_input {
+        width: 280px;
+        height: 40px;
+    }
+
+    .gus_fact {
+        width: 100%;
+    }
+
+    .gus_fact_img {
+        width: 100%;
+    }
 }
